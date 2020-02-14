@@ -1,0 +1,65 @@
+
+<html>
+    <body>
+        <script>
+        function readId(event) {
+
+          event.preventDefault();
+
+         let element = document.querySelector("#id");
+
+            fetch("/id/" + element.value).then((res) => {
+                return res.json();
+            }).then((processed) => {
+                
+            let reporting = document.querySelector("#reportingArea");
+
+            if(processed.error) {
+                reporting.innerHTML = processed.error;
+            } else {
+                reporting.innerHTML = processed.name;
+            }
+
+            });
+            }
+
+            function readName(event) {
+
+                event.preventDefault();
+
+                let element = document.querySelector("#name");
+
+                fetch("/name/" + element.value).then((res) => {
+                    return res.json();
+                }).then((processed) => {
+                    
+                let reporting = document.querySelector("#reportingArea");
+
+                if(processed.error) {
+                    reporting.innerHTML = processed.error;
+                } else {
+                    reporting.innerHTML = processed.name;
+                }
+
+                });
+                }
+        </script>
+        <h2>Id</h2>
+            <form onsubmit ="readId(event)">
+            <input id="id" type="text">
+            <button>Submit!</button>
+             </form>
+        <hr>
+        <h2>Name</h2>
+            <form onsubmit ="readName(event)">
+                <input id="name" type="text">
+                <button>Submit!</button>
+            </form>
+        <hr>
+         <h2>Reporting</h2>
+            <div id="reportingArea"></div>
+    </body>
+</html>
+
+
+
