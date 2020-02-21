@@ -1,4 +1,4 @@
-const chalk = reqiure("chalk");
+const chalk = require("chalk");
 // const beep = require("beepbeep");
  class Person {
      constructor(name, favoriteColors, backgroundColors){
