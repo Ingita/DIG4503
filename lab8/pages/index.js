@@ -1,10 +1,19 @@
+import Head from 'next/head';
+import IdSearch from '../components/IdSearch';
+import NameSearch from '../components/NameSearch';
 
-import IdSearch from './components/IdSearch';
-import NameSearch from './components/NameSearch';
-const Home = () => {
+class Home extends React.Component {
+render() {
+
   return (
-    <p>Hi!</p>
+    <div>
+      <h2>Search</h2>
+      <NameSearch />
+      <IdSearch  />
+     <div id = "reportingArea"></div>
+    </div>
   );
-}
 
+}
+}
 export default Home;
