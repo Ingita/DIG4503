@@ -26,11 +26,11 @@ class IdSearch extends React.Component {
 
     render() {
         return(
-            <div>
+            <div className={styles.body}>
                  <h2 className={styles.colorGreen}>Id</h2>
                  <form onSubmit={this.readId}>
-                    <input id="id" type="text" />
-                    <button  className={styles.colorBlack}>Submit</button>
+                    <input className={styles.input} id="id" type="text" />
+                    <button  className={styles.colorB}>Submit</button>
                 </form>
             </div>
         );

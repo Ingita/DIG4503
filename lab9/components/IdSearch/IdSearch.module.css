@@ -1,7 +1,18 @@
 .colorGreen{
-    color: pink;
+    color: rgb(250, 137, 156);
     font: Helvetica 20px cursive;
+    background: rgb(235, 231, 231);
+    text-align: center;
 }
-.colorBlack {
-    background-color: rgb(158, 102, 102);
+.colorB {
+    background-color: rgb(136, 207, 130);
+    padding: 9px 20px;
+    text-align: center;
   }
+  .body {
+    background-color: rgb(216, 241, 250);
+  }
+
+ .input{
+    padding: 9px 22px;
+ }

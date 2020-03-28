@@ -11,7 +11,7 @@ class Home extends React.Component {
          <Head>
         <title>Lab9</title>
       </Head>
-        <h2>Start</h2>
+        <h2>Hame Page</h2>
         <div>
         <Link href="/id">
         <a>Id Search</a>
@@ -26,6 +26,8 @@ class Home extends React.Component {
         <a>Type Search</a>
         </Link>
       </div>
+
+
     );
   
   }

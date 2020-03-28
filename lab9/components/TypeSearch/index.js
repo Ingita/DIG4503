@@ -26,11 +26,11 @@ class TypeSearch extends React.Component {
 
     render() {
         return(
-            <div>
+            <div className={styles.body}>
                  <h2 className={styles.colorGreen}>Type</h2>
                  <form onSubmit={this.readType}>
-                    <input id="type" type="text" />
-                    <button>Submit</button>
+                    <input className={styles.input} id="type" type="text" />
+                    <button  className={styles.colorB}>Submit</button>
                 </form>
             </div>
         );

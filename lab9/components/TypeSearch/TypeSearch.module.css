@@ -2,4 +2,14 @@
     color: blueviolet;
     font: 20px ;
     font-family: 'Arial';
+    text-align: center;
 }
+.colorB {
+    background-color: rgb(192, 69, 69);
+  }
+  .body {
+    background-color: rgb(216, 241, 250);
+  }
+  .input{
+    padding: 9px 22px;
+ }
