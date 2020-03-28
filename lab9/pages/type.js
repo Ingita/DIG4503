@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import NameSearch from '../components/TypeSearch';
+import TypeSearch from '../components/TypeSearch';
 
 // function Home(){
 //     return(
@@ -20,7 +20,7 @@ import NameSearch from '../components/TypeSearch';
 //   export default Home;
 
 
-  class Home extends React.Component {
+  class Type extends React.Component {
     render() {
     
       return (
@@ -47,4 +47,4 @@ import NameSearch from '../components/TypeSearch';
     
     }
     }
-    export default Home;
+    export default Type;

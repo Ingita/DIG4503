@@ -24,7 +24,7 @@ import IdSearch from '../components/IdSearch';
 //   export default Home;
 
 
-  class Home extends React.Component {
+  class Id extends React.Component {
     render() {
     
       return (
@@ -35,6 +35,7 @@ import IdSearch from '../components/IdSearch';
           <div>
           <h2>Id Search</h2>
           <IdSearch  />
+          <br/>
          <div id = "reportingArea"></div>
           </div>
 
@@ -53,5 +54,5 @@ import IdSearch from '../components/IdSearch';
     
     }
     }
-    export default Home;
+    export default Id;
  

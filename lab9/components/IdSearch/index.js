@@ -1,7 +1,7 @@
 import styles from './IdSearch.module.css';
 class IdSearch extends React.Component {
 
-    readId(event) {
+    readScore = (event) => {
 
         event.preventDefault();
 
@@ -28,7 +28,7 @@ class IdSearch extends React.Component {
         return(
             <div className={styles.body}>
                  <h2 className={styles.colorGreen}>Id</h2>
-                 <form onSubmit={this.readId}>
+                 <form onSubmit={this.readScore}>
                     <input className={styles.input} id="id" type="text" />
                     <button  className={styles.colorB}>Submit</button>
                 </form>
@@ -38,7 +38,6 @@ class IdSearch extends React.Component {
 }
 
 export default IdSearch;
-// export default ExampleComponent;
 
 
 

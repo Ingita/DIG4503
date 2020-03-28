@@ -19,7 +19,7 @@ import NameSearch from '../components/NameSearch';
 //   }
 //   export default Home;
 
-  class Home extends React.Component {
+  class Name extends React.Component {
     render() {
     
       return (
@@ -46,4 +46,4 @@ import NameSearch from '../components/NameSearch';
     
     }
     }
-    export default Home;
+    export default Name;

@@ -2,13 +2,13 @@ import styles from './TypeSearch.module.css';
 class TypeSearch extends React.Component {
 
  
-    readType(event) {
+    readType =(event)=> {
 
         event.preventDefault();
 
-        let element = document.querySelector("#type");
+        let element = document.querySelector("#typelist");
 
-        fetch("api/pokemon/type/" + element.value).then((res) => {
+        fetch("api/pokemon/typelist/" + element.value).then((res) => {
             return res.json();
         }).then((processed) => {
             
@@ -17,7 +17,7 @@ class TypeSearch extends React.Component {
         if(processed.error) {
             reporting.innerHTML = processed.error;
         } else {
-            reporting.innerHTML = processed.id;
+            reporting.innerHTML = processed.typeList;
         }
 
         });
@@ -29,7 +29,7 @@ class TypeSearch extends React.Component {
             <div className={styles.body}>
                  <h2 className={styles.colorGreen}>Type</h2>
                  <form onSubmit={this.readType}>
-                    <input className={styles.input} id="type" type="text" />
+                    <input className={styles.input} id="typelist" type="text" />
                     <button  className={styles.colorB}>Submit</button>
                 </form>
             </div>
