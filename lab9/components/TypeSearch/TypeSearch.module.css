@@ -6,6 +6,8 @@
 }
 .colorB {
     background-color: rgb(192, 69, 69);
+    padding: 9px 20px;
+    text-align: center;
   }
   .body {
     background-color: rgb(216, 241, 250);

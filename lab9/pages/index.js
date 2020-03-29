@@ -1,17 +1,17 @@
 import Head from 'next/head';
 import Link from 'next/link';
-
+import styles from '../components/index.module.css'
 
 
 class Home extends React.Component {
   render() {
   
     return (
-      <div>
+      <div className={styles.name}>
          <Head>
         <title>Lab9</title>
       </Head>
-        <h2>Home Page</h2>
+        <h2  className={styles.colorb}>Home Page</h2>
         <div>
         <Link href="/id">
         <a>Id Search</a>
