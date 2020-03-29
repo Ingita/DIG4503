@@ -2,11 +2,9 @@ import getPokemon from 'json-pokemon/getPokemon';
 
 export default (req, res) => {
 
-    let result = {"error": "Could not find id."};
+    let result = {"error": "Could not find name."};
 
-    const id = parseInt(req.query.id);
-
-    let pokemon = getPokemon.getPokemonById(id);
+    let pokemon = getPokemon.getPokemonByName(req.query.name);
 
     if(pokemon !== null) {
         result = pokemon;
